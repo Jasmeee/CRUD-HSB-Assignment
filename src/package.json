@@ -1,0 +1,34 @@
+{
+  "name": "Express-project-januari-HSB-Jasmine",
+  "version": "1.0.0",
+  "description": "membuat express project",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "start-dev": "nodemon src/index.js",
+    "build": "node src/index.js"
+  },
+  "author": "Jasmine Aubrey Andrea",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "latest",
+    "eslint-config-airbnb-base": "latest",
+    "eslint-config-prettier": "latest",
+    "eslint-plugin-import": "latest",
+    "eslint-plugin-prettier": "latest",
+    "nodemon": "^2.0.20",
+    "prettier": "latest",
+    "sequelize-cli": "^6.6.0"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cors": "latest",
+    "dotenv": "^16.0.3",
+    "express": "latest",
+    "js": "^0.1.0",
+    "jsonwebtoken": "^9.0.0",
+    "mysql2": "^3.1.2",
+    "sequelize": "^6.28.0"
+  }
+}
