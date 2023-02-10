@@ -1,16 +1,8 @@
-'use strict';
+// 'use strict';
 
 const fs = require('fs');
 const path = require('path');
 const Sequelize = require('sequelize');
-
-// var sequelize = new Sequelize(global.config.dbConfig.name, global.config.dbConfig.user, global.config.dbConfig.password, {
-//   host: global.config.dbConfig.host,
-//   port: global.config.dbConfig.port,
-//   pool: false
-// });
-
-
 const process = require('process');
 const basename = path.basename(__filename);
 const env = process.env.NODE_ENV || 'development';

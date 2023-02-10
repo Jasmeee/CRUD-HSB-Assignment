@@ -1,8 +1,8 @@
-'use strict';
+const {sequelize} = require('../models/index.js');
 
 module.exports = {
   async up (queryInterface, Sequelize) {
-    await queryInterface.createTable('product', { 
+    await queryInterface.createTable("product", { 
       id: {
         type: sequelize.INTEGER, 
         primaryKey: true,
@@ -11,19 +11,21 @@ module.exports = {
       },
 
       name: {
-        type: Sequelize.STRING
-      },
-
-      description : {
-        type: Sequelize.STRING
-      },
-
-      createAt: {
-        type: sequelize.DATE,
+        type: Sequelize.STRING,
         allowNull: false
       },
 
-      UpdatedAt: {
+      description : {
+        type: Sequelize.STRING,
+        allowNull: false
+      },
+
+      price: {
+        type: sequelize.INTEGER,
+        allowNull: false
+      },
+
+      createdAt: {
         type: sequelize.DATE,
         allowNull: false
       }
@@ -32,7 +34,7 @@ module.exports = {
   },
 
   async down (queryInterface, Sequelize) {
-    await queryInterface.dropTable('product');
+    await queryInterface.dropTable("product");
 
   }
 };
